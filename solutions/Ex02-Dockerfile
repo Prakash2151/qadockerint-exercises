@@ -1,0 +1,25 @@
+from ubuntu:latest
+maintainer Kat McIvor 
+
+#update the image
+RUN apt-get update && apt-get clean
+
+#setup maven
+RUN sudo apt-get install -y maven
+
+#install git
+RUN apt-get install -y git
+
+#install java
+RUN apt-get install -y openjdk-7-jdk
+
+#build the project
+run git clone https://bitbucket.org/kizzie/hello-scalatra
+
+WORKDIR /hello-scalatra
+run mvn package 
+
+expose 8080
+CMD mvn jetty:run
+
+
