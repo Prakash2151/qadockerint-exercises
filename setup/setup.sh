@@ -17,5 +17,8 @@ yum install -y git
 cd /home/ec2-user/
 git clone https://bitbucket.org/kizzie/qadockerint-exercises.git
 git clone https://bitbucket.org/kizzie/hello-scalatra.git
+git clone https://bitbucket.org/kizzie/qadockerint-eventsproject.git
 chown -R ec2-user:ec2-user qadockerint-exercises
 chown -R ec2-user:ec2-user hello-scalatra
+chown -R ec2-user:ec2-user qadockerint-eventsproject
+
