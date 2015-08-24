@@ -22,3 +22,5 @@ chown -R ec2-user:ec2-user qadockerint-exercises
 chown -R ec2-user:ec2-user hello-scalatra
 chown -R ec2-user:ec2-user qadockerint-eventsproject
 
+#create the docker nuke alias
+alias dockernuke='docker kill $(docker ps -a -q) && docker rm $(docker ps -a -q)'
