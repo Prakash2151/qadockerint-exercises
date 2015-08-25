@@ -1,0 +1,13 @@
+mysqldatabase:
+  image: mysql
+  volumes: 
+    - /docker/mysql-data/:/var/lib/mysql/
+  environment:
+    MYSQL_ROOT_PASSWORD: rootpassword
+
+php:
+  build: .
+  ports:
+    - "80:80"
+  links:
+    - mysqldatabase:db
