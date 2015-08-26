@@ -1,2 +1,4 @@
 *.pem
 *.ppk
+class.template
+stackoutput.txt
