@@ -17,5 +17,5 @@ aws cloudformation create-stack --stack-name dockerclass --template-body "file:/
 #get the description of the cloud
 aws cloudformation describe-stacks --stack-name dockerclass > stackoutput.txt
 
-#parse the outputs to generate individual files
+#parse the outputs to generate individual files (not working?)
 parse-outputs -i stackoutput.txt
