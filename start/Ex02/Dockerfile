@@ -1,4 +1,4 @@
-#use the latest Ubuntu image
+#use the 14:04 Ubuntu image
 
 #add a maintainer line with your name
 
