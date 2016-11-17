@@ -11,7 +11,7 @@ apt-get install -y git
 apt-get install -y openjdk-7-jdk
 
 #build the project
-git clone https://bitbucket.org/kizzie/hello-scalatra
+git clone https://gitlab.com/qatraining/qadockerint-hello-scalatra
 
 cd hello-scalatra
 

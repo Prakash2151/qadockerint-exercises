@@ -1,5 +1,5 @@
-from ubuntu:latest
-maintainer Kat McIvor 
+from ubuntu:14.04
+maintainer Kat McIvor
 
 #update the image
 RUN apt-get update && apt-get clean
@@ -14,12 +14,10 @@ RUN apt-get install -y git
 RUN apt-get install -y openjdk-7-jdk
 
 #build the project
-run git clone https://bitbucket.org/kizzie/hello-scalatra
+run git clone https://gitlab.com/qatraining/qadockerint-hello-scalatra hello-scalatra
 
 WORKDIR /hello-scalatra
-run mvn package 
+run mvn package
 
 expose 8080
 CMD mvn jetty:run
-
-
