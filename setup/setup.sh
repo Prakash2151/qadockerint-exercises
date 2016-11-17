@@ -16,7 +16,7 @@ yum install -y git
 #clone the repository
 cd /home/ec2-user/
 git clone https://gitlab.com/qatraining/qadockerint-exercises
-git clone https://gitlab.com/qatraining/qadockerint-hello-scalatra
+git clone https://gitlab.com/qatraining/qadockerint-hello-scalatra hello-scalatra
 git clone https://gitlab.com/qatraining/qadockerint-eventsproject
 chown -R ec2-user:ec2-user qadockerint-exercises
 chown -R ec2-user:ec2-user hello-scalatra
