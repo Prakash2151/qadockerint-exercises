@@ -14,8 +14,8 @@ RUN apt-get install -y git
 RUN apt-get install -y openjdk-7-jdk
 
 #build the project
-COPY /hello-world
-WORKDIR /hello-world
+run git clone https://gitlab.com/qatraining/qadockerint-hello-scalatra hello-scalatra
+WORKDIR /hello-scalatra
 run mvn package
 
 expose 8080
