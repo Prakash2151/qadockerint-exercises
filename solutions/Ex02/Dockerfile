@@ -14,7 +14,7 @@ RUN apt-get install -y git
 RUN apt-get install -y openjdk-8-jdk
 
 #build the project
-run git clone https://bitbucket.org/qadevopsmast/qadockerint-hello-scalatra hello-scalatra
+run git clone https://bitbucket.org/@qadevopsmast/qadockerint-hello-scalatra hello-scalatra
 
 WORKDIR /hello-scalatra
 run mvn package
