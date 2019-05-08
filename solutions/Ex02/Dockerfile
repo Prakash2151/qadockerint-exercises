@@ -1,5 +1,5 @@
 from ubuntu:14.04
-maintainer Kat McIvor
+maintainer Peter McHaughton
 
 #update the image
 RUN apt-get update && apt-get clean
@@ -11,11 +11,10 @@ RUN sudo apt-get install -y maven
 RUN apt-get install -y git
 
 #install java
-RUN apt-get install -y openjdk-8-jdk
+RUN apt-get install -y openjdk-7-jdk
 
 #build the project
-run git clone https://bitbucket.org/@qadevopsmast/qadockerint-hello-scalatra hello-scalatra
-
+run git clone https://qadevopsmast@bitbucket.org/qadevopsmast/qadockerint-exercises.git
 WORKDIR /hello-scalatra
 run mvn package
 
