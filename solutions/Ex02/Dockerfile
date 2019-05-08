@@ -14,8 +14,8 @@ RUN apt-get install -y git
 RUN apt-get install -y openjdk-7-jdk
 
 #build the project
-run git clone https://qadevopsmast@bitbucket.org/qadevopsmast/qadockerint-exercises.git
-WORKDIR /hello-scalatra
+COPY /hello-world
+WORKDIR /hello-world
 run mvn package
 
 expose 8080
