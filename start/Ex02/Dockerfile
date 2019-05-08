@@ -11,7 +11,7 @@
 #install java
 
 #clone the git project (this bit has been done for you)
-run git clone https://gitlab.com/qatraining/qadockerint-hello-scalatra hello-scalatra
+run git clone https://gitlab.com/qatraining/qadockerint-hello-scalatra
 
 #change your directory to the hello-scalatra directory
 
@@ -21,7 +21,7 @@ run mvn package
 #open port 8080 to the outside world
 expose 8080
 
-# the command to run when the container starts â€“
+# the command to run when the container starts –
 # there is a maven jetty plugin we can run to start the
 # webservice
 CMD mvn jetty:run
