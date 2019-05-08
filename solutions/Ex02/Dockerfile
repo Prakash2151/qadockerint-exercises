@@ -11,10 +11,10 @@ RUN sudo apt-get install -y maven
 RUN apt-get install -y git
 
 #install java
-RUN apt-get install -y openjdk-7-jdk
+RUN apt-get install -y openjdk-8-jdk
 
 #build the project
-run git clone https://gitlab.com/qatraining/qadockerint-hello-scalatra hello-scalatra
+run git clone https://bitbucket.org/qadevopsmast/qadockerint-hello-scalatra hello-scalatra
 
 WORKDIR /hello-scalatra
 run mvn package
