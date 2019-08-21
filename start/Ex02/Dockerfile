@@ -11,9 +11,9 @@
 #install java
 
 #clone the git project (this bit has been done for you)
-run git clone https://gitlab.com/qatraining/qadockerint-hello-scalatra
+run git clone https://gitlab.com/qatraining/qadockerint-hello-scalatra hello-scalatra
 
-#change your directory to the hello-scalatra directory
+#change your directory to the hello-scalatra directory - hint find a Docker command!  
 
 #compile the project using mvn (this has also been done for you)
 run mvn package
